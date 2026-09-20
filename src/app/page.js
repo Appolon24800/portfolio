@@ -39,7 +39,7 @@ const links = [
 export default function Home() {
   return (
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <div className="bg grid grid-rows-[10px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-8 font-[family-name:var(--font-ibm-plex-sans)] relative z-10 overflow-hidden">
+      <div className="bg snap-start grid grid-rows-[10px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-8 font-[family-name:var(--font-ibm-plex-sans)] relative z-10 overflow-hidden">
         <div className="w-[500%] h-[1250px] bg-linear-to-b from-[rgb(73,0,0)] to-[rgb(73,0,0,0)]"></div>
         <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center sm:items-center text-center">
           <div className="flex flex-col items-center">
