@@ -84,7 +84,7 @@ export default function Home() {
         </footer>
       </div>
 
-      <section className="bg snap-start h-screen flex items-center justify-center bg-black text-white px-6">
+      <section className="bg snap-start min-h-screen flex items-center justify-center bg-black text-white px-6">
         <div className="hidden lg:block w-1/4 text-left">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
