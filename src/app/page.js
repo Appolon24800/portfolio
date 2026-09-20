@@ -84,7 +84,8 @@ export default function Home() {
         </footer>
       </div>
 
-      <section className="bg snap-start min-h-screen flex items-center justify-center bg-black text-white px-6">
+      <section className="bg snap-start min-h-screen relative flex items-center justify-center bg-black text-white px-6">
+        <div className="lg:hidden absolute inset-0 red-wash pointer-events-none"></div>
         <div className="hidden lg:block w-1/4 text-left">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
@@ -102,7 +103,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl text-center space-y-6 md:space-y-4 lg:max-w-lg lg:mx-20">
+        <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl text-center space-y-6 md:space-y-4 lg:max-w-lg lg:mx-20 relative">
           <div className="bg-gray-900 rounded-xl p-3 md:p-4 text-left shadow-md">
             <span className="text-lg md:text-xl font-semibold mb-2">Email</span>
             <Image src="/mail.png" alt="Email icon" width={16} height={16} className="inline-block ml-1 mb-1 invert" />
