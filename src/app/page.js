@@ -95,6 +95,7 @@ export default function Home() {
               <p>• 4 years of experience in Java</p>
               <p>• 5 years of experience in Python with Django and FastAPI</p>
               <p>• I work with REST APIs, use Docker, and handle networking</p>
+              <p>• System administrator and Linux user</p>
               <p>• I know software as well as hardware</p>
               <p>• Haven&apos;t released a chatgpt wrapper</p>
             </div>
@@ -162,6 +163,7 @@ export default function Home() {
               <p>• 4 ans d&apos;expérience en Java</p>
               <p>• 5 ans d&apos;expérience en Python avec Django et FastAPI</p>
               <p>• Je travaille avec des API, utilise Docker et gère les réseaux</p>
+              <p>• Utilise Linux et administrateur système</p>
               <p>• Je connais aussi bien le software que le hardware</p>
               <p>• N&apos;a pas sorti de wrapper pour ChatGPT</p>
             </div>
@@ -169,8 +171,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lg:hidden snap-start min-h-screen flex items-center justify-center bg-black text-white px-6 py-12">
-        <div className="max-w-2xl space-y-12">
+      <section className="lg:hidden snap-start min-h-screen relative flex items-center justify-center bg-black text-white px-6 py-12">
+        <div className="absolute inset-0 bg-fade pointer-events-none"></div>
+        <div className="max-w-2xl space-y-12 relative">
           <div className="text-center space-y-4">
             <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
             <p className="text-gray-300 text-lg">
@@ -180,6 +183,7 @@ export default function Home() {
               <p>• 4 years of experience in Java</p>
               <p>• 5 years of experience in Python with Django and FastAPI</p>
               <p>• I work with REST APIs, use Docker, and handle networking</p>
+              <p>• System administrator and Linux user</p>
               <p>• I know software as well as hardware</p>
               <p>• Haven&apos;t released a chatgpt wrapper</p>
             </div>
@@ -196,6 +200,7 @@ export default function Home() {
               <p>• 4 ans d&apos;expérience en Java</p>
               <p>• 5 ans d&apos;expérience en Python avec Django et FastAPI</p>
               <p>• Je travaille avec des API, utilise Docker et gère les réseaux</p>
+              <p>• Utilise Linux et administrateur système</p>
               <p>• Je connais aussi bien le software que le hardware</p>
               <p>• N&apos;a pas sorti de wrapper pour ChatGPT</p>
             </div>

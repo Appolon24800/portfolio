@@ -21,6 +21,16 @@
   background-repeat: repeat;
 }
 
+.bg-fade {
+  background-image:
+    linear-gradient(to bottom, rgba(73, 0, 0, 0.5), transparent 75%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 75%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 75%);
+}
+
 .wave {
   display: inline-block;
   transform-origin: 70% 70%;
