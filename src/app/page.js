@@ -30,7 +30,7 @@ const skills = [
 
 const links = [
   { name: "Github", url: "https://github.com/Appolon24800", icon: "/github.svg" },
-  { name: "Youtube", url: "https://www.youtube.com/@AppolonDotDev", icon: "/youtube.svg" },
+  { name: "Youtube", url: "https://www.youtube.com/@NotAppolonDotDev", icon: "/youtube.svg" },
   { name: "NameMC", url: "https://namemc.com/profile/Appolon_.1", icon: "/namemc.svg" },
   { name: "Discord", url: "https://discord.com/users/1167377747643990107", icon: "/discord.svg" },
   { name: "Homelab", url: "https://home.appolon.dev", icon: "/homer.png" },
