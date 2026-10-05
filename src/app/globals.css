@@ -9,9 +9,69 @@
 
 :root {
   color: rgb(255, 245, 245);
+  color-scheme: dark;
 }
 
-.bg {
+.portfolio-scroll,
+.portfolio-home {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.portfolio-scroll {
+  background-attachment: local;
+}
+
+.portfolio-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.portfolio-home {
+  grid-template-rows: 10px minmax(0, 1fr) auto;
+}
+
+@media (max-width: 639px) {
+  .portfolio-home {
+    padding-top: clamp(0.75rem, 2dvh, 2rem);
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    row-gap: clamp(0.5rem, 2dvh, 1.5rem);
+  }
+
+  .portfolio-home main {
+    gap: clamp(1rem, 3dvh, 2rem);
+  }
+
+  .portfolio-home .rounded-image {
+    width: clamp(5rem, calc(100dvh - 540px), 220px);
+    height: clamp(5rem, calc(100dvh - 540px), 220px);
+  }
+
+  .portfolio-home .portfolio-title {
+    margin-top: clamp(0.5rem, 2dvh, 1rem);
+  }
+
+  .portfolio-home h3 {
+    margin-top: 1rem;
+  }
+
+  .portfolio-skills {
+    row-gap: clamp(1rem, 3dvh, 2.25rem);
+  }
+
+  .portfolio-home footer {
+    gap: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .portfolio-home {
+    padding-inline: 1rem;
+  }
+}
+
+:root,
+.portfolio-scroll {
   background-color: rgb(9, 1, 0);
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
@@ -19,20 +79,6 @@
   background-size: 40px 40px;
   background-position: 0 0, 0 0;
   background-repeat: repeat;
-}
-
-.red-wash {
-  background: linear-gradient(to bottom, transparent, rgba(73, 0, 0, 0.15));
-}
-
-.bg-fade {
-  background-image:
-    linear-gradient(to bottom, rgba(73, 0, 0, 0.25), transparent 75%),
-    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-  background-size: 100% 100%, 40px 40px, 40px 40px;
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 75%);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 75%);
 }
 
 .wave {

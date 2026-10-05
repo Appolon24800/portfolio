@@ -38,8 +38,8 @@ const links = [
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <div className="bg snap-start grid grid-rows-[10px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-8 font-[family-name:var(--font-ibm-plex-sans)] relative z-10 overflow-hidden">
+    <div className="portfolio-scroll overflow-y-scroll snap-y snap-mandatory">
+      <div className="portfolio-section portfolio-home snap-start grid items-center justify-items-center p-8 pb-20 gap-16 sm:p-8 font-[family-name:var(--font-ibm-plex-sans)] relative z-10 overflow-hidden">
         <div className="w-[500%] h-[1250px] bg-linear-to-b from-[rgb(73,0,0)] to-[rgb(73,0,0,0)]"></div>
         <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center sm:items-center text-center">
           <div className="flex flex-col items-center">
@@ -51,7 +51,7 @@ export default function Home() {
               height={220}
               priority
             />
-            <h1 className="text-4xl font-[family-name:var(--font-ibm-plex-sans)] shadow mt-4">
+            <h1 className="portfolio-title text-4xl font-[family-name:var(--font-ibm-plex-sans)] shadow mt-4">
               Appolon <span className="no-shadow wave">👋🏼</span>
             </h1>
             <h3 className="justify-center mt-8">
@@ -59,7 +59,7 @@ export default function Home() {
             </h3>
             <Time />
           </div>
-          <div className="flex flex-wrap gap-9 items-center justify-center w-full">
+          <div className="portfolio-skills flex flex-wrap gap-9 items-center justify-center w-full">
             {skills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center gap-2">
                 <div className="h-16 flex items-end justify-center">
@@ -84,8 +84,43 @@ export default function Home() {
         </footer>
       </div>
 
-      <section className="bg snap-start min-h-screen relative flex items-center justify-center bg-black text-white px-6">
-        <div className="lg:hidden absolute inset-0 red-wash pointer-events-none"></div>
+      <section className="lg:hidden portfolio-section snap-start relative flex items-center justify-center text-white px-6 py-12">
+        <div className="max-w-2xl space-y-12 relative">
+          <div className="text-center space-y-4">
+            <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
+            <p className="text-gray-300 text-lg">
+              I am Appolon, a backend software developer
+            </p>
+            <div className="text-sm text-gray-400 space-y-1">
+              <p>• 4 years of experience in Java</p>
+              <p>• 5 years of experience in Python with Django and FastAPI</p>
+              <p>• I work with REST APIs, use Docker, and handle networking</p>
+              <p>• System administrator and Linux user</p>
+              <p>• I know software as well as hardware</p>
+              <p>• Haven&apos;t released a chatgpt wrapper</p>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-700"></div>
+
+          <div className="text-center space-y-4">
+            <h2 className="text-2xl font-bold text-red-400">🇫🇷 À propos de moi</h2>
+            <p className="text-gray-300 text-lg">
+              Je suis Appolon, un développeur backend
+            </p>
+            <div className="text-sm text-gray-400 space-y-1">
+              <p>• 4 ans d&apos;expérience en Java</p>
+              <p>• 5 ans d&apos;expérience en Python avec Django et FastAPI</p>
+              <p>• Je travaille avec des API, utilise Docker et gère les réseaux</p>
+              <p>• Utilise Linux et administrateur système</p>
+              <p>• Je connais aussi bien le software que le hardware</p>
+              <p>• N&apos;a pas sorti de wrapper pour ChatGPT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="portfolio-section snap-start relative flex items-center justify-center text-white px-6">
         <div className="hidden lg:block w-1/4 text-left">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
@@ -156,48 +191,11 @@ export default function Home() {
 
         <div className="hidden lg:block w-1/4 text-right">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-red-400">🇫🇷 Qui suis-je?</h2>
+            <h2 className="text-2xl font-bold text-red-400">🇫🇷 À propos de moi</h2>
             <p className="text-gray-300">
               Je suis Appolon, un développeur backend
             </p>
             <div className="text-sm text-gray-400">
-              <p>• 4 ans d&apos;expérience en Java</p>
-              <p>• 5 ans d&apos;expérience en Python avec Django et FastAPI</p>
-              <p>• Je travaille avec des API, utilise Docker et gère les réseaux</p>
-              <p>• Utilise Linux et administrateur système</p>
-              <p>• Je connais aussi bien le software que le hardware</p>
-              <p>• N&apos;a pas sorti de wrapper pour ChatGPT</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="lg:hidden snap-start min-h-screen relative flex items-center justify-center bg-black text-white px-6 py-12">
-        <div className="absolute inset-0 bg-fade pointer-events-none"></div>
-        <div className="max-w-2xl space-y-12 relative">
-          <div className="text-center space-y-4">
-            <h2 className="text-2xl font-bold text-red-400">Who am I? 🇬🇧</h2>
-            <p className="text-gray-300 text-lg">
-              I am Appolon, a backend software developer
-            </p>
-            <div className="text-sm text-gray-400 space-y-1">
-              <p>• 4 years of experience in Java</p>
-              <p>• 5 years of experience in Python with Django and FastAPI</p>
-              <p>• I work with REST APIs, use Docker, and handle networking</p>
-              <p>• System administrator and Linux user</p>
-              <p>• I know software as well as hardware</p>
-              <p>• Haven&apos;t released a chatgpt wrapper</p>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700"></div>
-
-          <div className="text-center space-y-4">
-            <h2 className="text-2xl font-bold text-red-400">🇫🇷 Qui suis-je?</h2>
-            <p className="text-gray-300 text-lg">
-              Je suis Appolon, un développeur backend
-            </p>
-            <div className="text-sm text-gray-400 space-y-1">
               <p>• 4 ans d&apos;expérience en Java</p>
               <p>• 5 ans d&apos;expérience en Python avec Django et FastAPI</p>
               <p>• Je travaille avec des API, utilise Docker et gère les réseaux</p>
