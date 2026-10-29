@@ -5,6 +5,7 @@ import Typewriter from "./typewriter";
 import PgpBlock from "./pgpKey";
 
 const pgpKey = `-----BEGIN PGP PUBLIC KEY BLOCK-----
+
 xjMEaA6mABYJKwYBBAHaRw8BAQdAjx/LcrC7EL/tZyHH0pk7Bp0sW1BmWRsh
 r4xanbIpCy/NJ3pndWVycmV0QHByb3Rvbi5tZSA8emd1ZXJyZXRAcHJvdG9u
 Lm1lPsK/BBMWCABxBYJoDqYAAwsJBwmQUW34bLUF2xs1FAAAAAAAHAAQc2Fs
@@ -18,6 +19,7 @@ cmcFymgp3chpnagUQJUyo6JoApsMFiEELQ8zT2GJ2BI2J0TWUW34bLUF2xsA
 ALfJAP9r4v0BML2jQifOmTwzRemoc7YBkawmy8H/x+AXhQUAoQEArtMYYuq9
 Vj00tG6uCSSGrpsH17HU4H7RFvqOB+CMkQg=
 =6Q5P
+
 -----END PGP PUBLIC KEY BLOCK-----`;
 
 const skills = [
