@@ -53,8 +53,8 @@ export default function Home() {
               height={220}
               priority
             />
-            <h1 className="portfolio-title text-4xl font-[family-name:var(--font-ibm-plex-sans)] shadow mt-4">
-              Appolon <span className="no-shadow wave">👋🏼</span>
+            <h1 className="portfolio-title relative text-4xl font-[family-name:var(--font-ibm-plex-sans)] shadow mt-4">
+              Appolon<span className="no-shadow wave absolute left-full top-0 ml-2">👋🏼</span>
             </h1>
             <h3 className="justify-center mt-8">
               <Typewriter />
