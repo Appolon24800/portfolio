@@ -17,7 +17,7 @@ const Time = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <h4>France, Marseille - {time}</h4>;
+  return <h4 className="text-sm leading-5">France, Marseille - {time}</h4>;
 };
 
 export default Time;
